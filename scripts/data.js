@@ -241,22 +241,6 @@ export const products = {
       },
       {
         id: 13,
-        title: "Papa Esquite Volcano",
-        description:
-          "Papa esquite bañado en queso amarillo líquido calientito.",
-        sizes: [
-          { size: "Chico", price: 65.0 },
-          { size: "Grande", price: 85.0 },
-        ],
-        image: "img/papa-esquite-volcano.png",
-        options: [
-          { name: "Cubierta fritura", options: frituraOptions },
-          { name: "Bolsa papitas", options: papitasOptions },
-          { name: "Extras", options: extrasOptions },
-        ],
-      },
-      {
-        id: 14,
         title: "Esquite Suadero o Pastor",
         description:
           "Esquite preparado con carne al pastor, suadero o mixto y verdura encima.",
@@ -272,7 +256,7 @@ export const products = {
         ],
       },
       {
-        id: 15,
+        id: 14,
         title: "Esquites Cambray",
         description:
           "Esquite clásico acompañado con papas cambray preparadas con especias al horno.",
@@ -289,7 +273,7 @@ export const products = {
     ],
     maruchan: [
       {
-        id: 16,
+        id: 15,
         title: "Maruchan Clásica",
         description:
           "Maruchan preparada con esquite, limón, sal, mayonesa y queso rallado.",
@@ -301,7 +285,7 @@ export const products = {
         ],
       },
       {
-        id: 19,
+        id: 16,
         title: "Maruchan esquite y fritura",
         description:
           "Maruchan-esquite con cobertura de fritura a elegir: Cheeto Flamin, Doritos, Takis o Ruffles.",
@@ -314,7 +298,7 @@ export const products = {
         ],
       },
       {
-        id: 20,
+        id: 17,
         title: "Esquisopa loca",
         description:
           "Maruchan-esquite, fritura y una bolsa de papas Sabritas a elegir.",
@@ -328,7 +312,7 @@ export const products = {
         ],
       },
       {
-        id: 21,
+        id: 18,
         title: "Maruchan Suadero o Pastor",
         description:
           "Maruchan-esquite con una porción de suadero, pastor o mixto y verdura encima.",
@@ -344,7 +328,7 @@ export const products = {
     ],
     snacks: [
       {
-        id: 22,
+        id: 19,
         title: "Papas Locas",
         description:
           "Papas de hojuela estilo C&A (100 gramos), sabor a escoger: naturales, adobadas, queso o chipotle; preparadas con limón, sal, salsa maggi, salsa inglesa y queso amarillo derretido calientito, agrega gomitas y cacahuates sin costo.",
@@ -353,7 +337,7 @@ export const products = {
         options: [{ name: "Papa", options: papaslocasOptions }],
       },
       {
-        id: 23,
+        id: 20,
         title: "Nachos sencillos",
         description:
           "Charola de nachos acompañado de chiles jalapeño y queso derretido líquido calientito.",
@@ -362,7 +346,7 @@ export const products = {
         options: [],
       },
       {
-        id: 24,
+        id: 21,
         title: "Nachos con suadero o pastor",
         description:
           "Charola de nachos acompañado de chiles jalapeño, queso líquido derretido calientito y una porción de carne al pastor, suadero o mixto encima.",
@@ -377,7 +361,7 @@ export const products = {
     ],
     drinks: [
       {
-        id: 25,
+        id: 22,
         title: "Vaso Preparado",
         description: "Vaso escarchado con polvo picoso 500ml.",
         price: 45.0,
@@ -385,7 +369,7 @@ export const products = {
         options: [{ name: "Sabor", options: saborPreparadas }],
       },
       {
-        id: 26,
+        id: 23,
         title: "Arizona Loco",
         description:
           "Escarchado de chamoy con miguelito, mango o fresa, cacahuates, gomitas y dulces de tamarindo. 680ml.",
@@ -397,7 +381,7 @@ export const products = {
         ],
       },
       {
-        id: 27,
+        id: 24,
         title: "Clamateco",
         description:
           "Escarchado de chamoy, clamato preparado con limón, sal, salsa maggi, salsa inglesa y banderilla de tamarindo. 500ml. ",
@@ -406,7 +390,7 @@ export const products = {
         options: [],
       },
       {
-        id: 28,
+        id: 25,
         title: "Coca Cola",
         description: "600ml.",
         price: 25.0,
@@ -414,7 +398,7 @@ export const products = {
         options: [],
       },
       {
-        id: 29,
+        id: 26,
         title: "Arizona",
         description: "Mango, Kiwi-Fresa, Sandía, Té Verde. 680ml.",
         price: 25.0,
@@ -422,7 +406,7 @@ export const products = {
         options: [{ name: "Sabor", options: saborArizona }],
       },
       {
-        id: 30,
+        id: 27,
         title: "Boing",
         description: "Mango, Fresa, Manzana, Uva. 500ml.",
         price: 20.0,
