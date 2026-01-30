@@ -103,7 +103,7 @@ export const products = {
         title: "Elote Natural",
         description: "Elote tradicional preparado con sal y limón.",
         price: 30.0,
-        image: "../img/elote-natural.png",
+        image: "../img/elote-natural.PNG",
         options: [{ name: "Extras", options: extrasOptions }],
       },
       {
@@ -112,7 +112,7 @@ export const products = {
         description:
           "Elote tradicional preparado con mantequilla, mayonesa y queso rallado.",
         price: 35.0,
-        image: "../img/elote-clasico.png",
+        image: "../img/elote-clasico.PNG",
         options: [{ name: "Extras", options: extrasOptions }],
       },
       {
@@ -121,7 +121,7 @@ export const products = {
         description:
           "Elote preparado con mantequilla, mayonesa y cobertura de fritura a elegir: doritos nacho, takis fuego, ruffles queso o cheetos flamin' hot",
         price: 45.0,
-        image: "../img/elote-loco.png",
+        image: "../img/elote-loco.PNG",
         options: [
           { name: "Cubierta fritura", options: frituraOptions },
           { name: "Extras", options: extrasOptions },
@@ -133,7 +133,7 @@ export const products = {
         description:
           "Elote Loco acompañado de una camita de papas Sabritas a elegir.",
         price: 60.0,
-        image: "../img/papalote.png",
+        image: "../img/papalote.PNG",
         options: [
           { name: "Cubierta fritura", options: frituraOptions },
           { name: "Bolsa papitas", options: papitasOptions },
@@ -158,7 +158,7 @@ export const products = {
         description:
           "Charola con un elote y esquite loco acompañados de papas Sabritas a elegir.",
         price: 90.0,
-        image: "../img/charola-eloteco-loco.png",
+        image: "../img/charola-eloteco-loco.PNG",
         options: [
           { name: "Cubierta fritura", options: frituraOptions },
           { name: "Bolsa papitas", options: papitasOptions },
@@ -173,7 +173,7 @@ export const products = {
         description:
           "Doritos a elegir preparados con esquite, limón, sal, mayonesa y queso rallado.",
         price: 55.0,
-        image: "../img/dori-esquite.png",
+        image: "../img/dori-esquite.PNG",
         options: [{ name: "Extras", options: extrasOptions }],
       },
       {
@@ -182,7 +182,7 @@ export const products = {
         description:
           "Tostitos a elegir preparados con esquite, limón, sal, mayonesa y queso rallado.",
         price: 55.0,
-        image: "../img/tosti-esquite.png",
+        image: "../img/tosti-esquite.PNG",
         options: [{ name: "Extras", options: extrasOptions }],
       },
       {
@@ -193,7 +193,7 @@ export const products = {
           { size: "Chico", price: 30.0 },
           { size: "Grande", price: 55.0 },
         ],
-        image: "../img/esquite-natural.png",
+        image: "../img/esquite-natural.PNG",
         options: [{ name: "Extras", options: extrasOptions }],
       },
       {
@@ -205,7 +205,7 @@ export const products = {
           { size: "Chico", price: 35.0 },
           { size: "Grande", price: 55.0 },
         ],
-        image: "../img/esquite-clasico.png",
+        image: "../img/esquite-clasico.PNG",
         options: [{ name: "Extras", options: extrasOptions }],
       },
       {
@@ -217,7 +217,7 @@ export const products = {
           { size: "Chico", price: 40.0 },
           { size: "Grande", price: 65.0 },
         ],
-        image: "../img/esquite-loco.png",
+        image: "../img/esquite-loco.PNG",
         options: [
           { name: "Cubierta fritura", options: frituraOptions },
           { name: "Extras", options: extrasOptions },
@@ -232,7 +232,7 @@ export const products = {
           { size: "Chico", price: 55.0 },
           { size: "Grande", price: 75.0 },
         ],
-        image: "../img/papa-esquite.png",
+        image: "../img/papa-esquite.PNG",
         options: [
           { name: "Cubierta fritura", options: frituraOptions },
           { name: "Bolsa papitas", options: papitasOptions },
@@ -248,7 +248,7 @@ export const products = {
           { size: "Chico", price: 65.0 },
           { size: "Grande", price: 85.0 },
         ],
-        image: "../img/papa-esquite-volcano.png",
+        image: "../img/papa-esquite-volcano.PNG",
         options: [
           { name: "Cubierta fritura", options: frituraOptions },
           { name: "Bolsa papitas", options: papitasOptions },
@@ -264,7 +264,7 @@ export const products = {
           { size: "Chico", price: 55.0 },
           { size: "Grande", price: 80.0 },
         ],
-        image: "../img/esquite-pastor-suadero.png",
+        image: "../img/esquite-pastor-suadero.PNG",
         options: [
           { name: "Carne", options: carneOptions },
           { name: "Verdura", options: verduraOptions },
@@ -280,7 +280,7 @@ export const products = {
           { size: "Chico", price: 50.0 },
           { size: "Grande", price: 70.0 },
         ],
-        image: "../img/esquite-cambray.png",
+        image: "../img/esquite-cambray.PNG",
         options: [
           { name: "Verdura", options: verduraOptions },
           { name: "Extras", options: extrasOptions },
@@ -349,7 +349,7 @@ export const products = {
         description:
           "Papas de hojuela estilo C&A (100 gramos), sabor a escoger: naturales, adobadas, queso o chipotle; preparadas con limón, sal, salsa maggi, salsa inglesa y queso amarillo derretido calientito, agrega gomitas y cacahuates sin costo.",
         price: 55.0,
-        image: "../img/papas-locas.png",
+        image: "../img/papas-locas.PNG",
         options: [{ name: "Papa", options: papaslocasOptions }],
       },
       {
@@ -358,7 +358,7 @@ export const products = {
         description:
           "Charola de nachos acompañado de chiles jalapeño y queso derretido líquido calientito.",
         price: 50.0,
-        image: "../img/nachos-sencillos.png",
+        image: "../img/nachos-sencillos.PNG",
         options: [],
       },
       {
@@ -367,7 +367,7 @@ export const products = {
         description:
           "Charola de nachos acompañado de chiles jalapeño, queso líquido derretido calientito y una porción de carne al pastor, suadero o mixto encima.",
         price: 70.0,
-        image: "../img/nachos-carne.png",
+        image: "../img/nachos-carne.PNG",
         options: [
           { name: "Carne", options: carneOptions },
           { name: "Verdura", options: verduraOptions },
@@ -402,7 +402,7 @@ export const products = {
         description:
           "Escarchado de chamoy, clamato preparado con limón, sal, salsa maggi, salsa inglesa y banderilla de tamarindo. 500ml. ",
         price: 50.0,
-        image: "../img/clamateco.png",
+        image: "../img/clamateco.PNG",
         options: [],
       },
       {
