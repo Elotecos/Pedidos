@@ -1,5 +1,8 @@
 @import url("global.css");
 
+body {
+  background-color: var(--color-white);
+}
 /* CONTENEDOR PRINCIPAL */
 .cart-page {
   min-height: 100vh;
@@ -7,7 +10,7 @@
   flex-direction: column;
   justify-content: center; /* centra vertical */
   align-items: center; /* centra horizontal */
-  background: var(--color-bg);
+  background: var(--color-white);
   padding: 20px;
 }
 
@@ -17,7 +20,7 @@
   align-items: center;
   padding: 8px 12px;
   background-color: var(--color-secondary);
-  color: var(--color-light);
+  color: var(--color-white);
   border-radius: 6px;
   text-decoration: none;
   font-size: 18px;
@@ -43,7 +46,7 @@ h1 {
 
 /* CART ITEMS */
 #cart-items {
-  background: var(--color-light);
+  background: var(--color-bg);
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
@@ -84,7 +87,7 @@ h1 {
 
 /* TOTAL */
 #cart-total-container {
-  background: var(--color-light);
+  background: var(--color-bg);
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
@@ -110,7 +113,7 @@ h1 {
 form {
   width: 100%;
   max-width: 600px;
-  background: var(--color-light);
+  background: var(--color-white);
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
@@ -145,7 +148,7 @@ button {
   font-size: 1.1rem;
   cursor: pointer;
   background-color: var(--color-accent);
-  color: var(--color-light);
+  color: var(--color-white);
   border: none;
   border-radius: 30px;
   transition:
