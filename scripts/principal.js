@@ -38,7 +38,7 @@ function renderProduct(product) {
 
   productDiv.addEventListener("click", () => {
     // Redirigir a product.html con el ID del producto en la URL
-    window.location.href = `/pages/product.html?id=${product.id}`;
+    window.location.href = `product.html?id=${product.id}`;
   });
 
   container.appendChild(productDiv);
