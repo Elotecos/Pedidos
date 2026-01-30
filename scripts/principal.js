@@ -46,7 +46,7 @@ function renderProduct(product) {
 
 // Función para renderizar productos de una categoría específica
 function renderProducts(category) {
-  container.innerHTML = ""; // Limpiar el contenedor antes de renderizar nuevos productos
+  container.innerHTML = "";
 
   if (products.todos.hasOwnProperty(category)) {
     products.todos[category].forEach((product) => {
@@ -68,8 +68,6 @@ function renderAllProducts() {
   });
 }
 
-// Función para actualizar el botón del carrito
-// Función para actualizar la visualización del botón del carrito
 function updateCartButton() {
   // Obtener el carrito de localStorage o crear un carrito vacío si no existe
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -109,14 +107,14 @@ function updateOpenStatus() {
       (hours === closingHour && minutes <= closingMinutes)
     ) {
       openStatusElement.textContent = "Abierto";
-      statusBullet.className = "bullet green"; // Cambia la bolita a verde
+      statusBullet.className = "bullet green";
     } else {
       openStatusElement.textContent = "Cerrado";
-      statusBullet.className = "bullet red"; // Cambia la bolita a roja
+      statusBullet.className = "bullet red";
     }
   } else {
     openStatusElement.textContent = "Cerrado";
-    statusBullet.className = "bullet red"; // Cambia la bolita a roja
+    statusBullet.className = "bullet red";
   }
 }
 
@@ -124,7 +122,6 @@ function updateOpenStatus() {
 
 updateOpenStatus();
 
-// Llamada inicial para actualizar la visualización del carrito al cargar la página
 document.addEventListener("DOMContentLoaded", updateCartButton);
 
 // Event listeners para los botones de categoría
@@ -147,6 +144,5 @@ document
   .getElementById("btn-drinks")
   .addEventListener("click", () => renderProducts("drinks"));
 
-// Inicializar con la categoría "All" cuando la página se carga
 renderAllProducts();
 updateCartButton();

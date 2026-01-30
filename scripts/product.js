@@ -40,7 +40,6 @@ function createOptionElement(option, groupName) {
     const select = document.createElement("select");
     select.name = groupName;
 
-    // Añadir opción por defecto
     const defaultOption = document.createElement("option");
     defaultOption.value = "";
     defaultOption.textContent = "Seleccione una opción";
@@ -106,7 +105,7 @@ function addToCart(product, size, options, customText) {
       price: totalPrice,
       size: size ? size.name : null,
       options: options,
-      customText: customText || "", // Añadir customText
+      customText: customText || "",
       quantity: 1,
     });
   }
@@ -128,18 +127,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
   const productId = parseInt(params.get("id"), 10);
   const product = getProductById(productId);
-
   if (!product) return;
-
   const productTitle = document.querySelector(".product-info h1");
   const productDescription = document.querySelector(".product-info p");
   const productImage = document.querySelector(".product-image");
+  const productDetail = document.querySelector(".product-detail");
   const optionsContainer = document.querySelector(".options");
-  const priceContainer = document.querySelector(".product-info .price"); // usar el del HTML
-
+  const priceContainer = document.querySelector(".product-info .price");
+  productImage.src = product.image;
+  productDetail.style.backgroundImage = `url(../${product.image})`;
   productTitle.textContent = product.title;
   productDescription.textContent = product.description;
-  productImage.src = product.image;
 
   let selectedSize = null;
 
@@ -165,23 +163,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     optionsContainer.appendChild(sizeSelect);
 
-    // Actualizar precio dinámicamente
     sizeSelect.addEventListener("change", (event) => {
       const selectedOption = event.target.options[event.target.selectedIndex];
       selectedSize = JSON.parse(selectedOption.value);
       priceContainer.textContent = `$${selectedSize.price.toFixed(2)}`;
     });
   } else {
-    // Productos con precio fijo
     priceContainer.textContent = product.price
       ? `$${product.price.toFixed(2)}`
       : "Precio no disponible";
   }
 
   const options = {};
-  let customText = ""; // Variable para el texto personalizado
 
-  // Añadir el checkbox de "¿Con todo?"
   const withEverythingLabel = document.createElement("label");
   const withEverythingCheckbox = document.createElement("input");
   withEverythingCheckbox.type = "checkbox";
@@ -206,10 +200,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const input = document.createElement("input");
         input.type = "text";
         input.placeholder = "Sin mayonesa, poco queso";
-        input.id = "custom-text"; // Añadir id para poder seleccionarlo
+        input.id = "custom-text";
         inputContainer.appendChild(input);
 
-        // Insertar inputContainer después de withEverythingLabel
         optionsContainer.insertBefore(
           inputContainer,
           withEverythingLabel.nextSibling,
@@ -218,7 +211,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Crear un contenedor para "Extras" que aparezca después
   const extrasContainer = document.createElement("div");
   extrasContainer.classList.add("extras-container");
 

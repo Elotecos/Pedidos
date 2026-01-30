@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const optObj = JSON.parse(opt);
             formattedOptions += `  - ${optObj.name} ${optObj.price ? `- $${optObj.price.toFixed(2)}` : ""}\n`;
           });
-          formattedOptions += "\n"; // Añadir un salto de línea extra entre cada grupo de opciones
+          formattedOptions += "\n";
         }
       } else {
         const optObj = JSON.parse(value);
@@ -95,12 +95,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (orderType === "domicilio") {
       addressSection.style.display = "block";
       if (shippingCostElement) {
-        shippingCostElement.style.display = "block"; // Mostrar el costo de envío
+        shippingCostElement.style.display = "block";
       }
     } else {
       addressSection.style.display = "none";
       if (shippingCostElement) {
-        shippingCostElement.style.display = "none"; // Ocultar el costo de envío
+        shippingCostElement.style.display = "none";
       }
     }
 
@@ -115,7 +115,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Obtener detalles del cliente
     const customerName = document.getElementById("customer-name").value.trim();
     const customerPhone = document
       .getElementById("customer-phone")
@@ -126,7 +125,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const customerPayment = document.getElementById("customer-payment").value;
     const orderType = document.getElementById("order-type").value;
 
-    // Verificar que se ingresen nombre, número, y dirección si es necesario
     if (
       !customerName ||
       !customerPhone ||
@@ -160,7 +158,6 @@ document.addEventListener("DOMContentLoaded", () => {
       0,
     );
 
-    // Añadir costo de envío si es necesario
     if (orderType === "domicilio") {
       const shippingCost = 25;
       total += shippingCost;
@@ -181,10 +178,8 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
-  // Actualizar la visualización del carrito al cargar la página
   updateCartDisplay();
 
-  // Manejar cambio en el tipo de pedido
   document
     .getElementById("order-type")
     .addEventListener("change", toggleAddressField);
