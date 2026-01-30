@@ -10,7 +10,7 @@ import {
   saborArizona,
   saborBoings,
   products,
-} from "scripts/data.js";
+} from "../scripts/data.js";
 
 let cart = [];
 const container = document.getElementById("product-container");
