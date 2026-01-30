@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+:root {
+  /* Colores de marca */
+  --color-primary: #fdbc00;
+  --color-secondary: #e42000;
+  --color-alternative: #ed5700;
+  --color-accent: #3d873d;
+  --color-bg: #fdbc00;
+  --color-black: #232;
+  --color-white: #f3efef;
+
+  /* Tipografía */
+  --font-base: "Lato", sans-serif;
+  --font-size: 16px;
+}
+
+body {
+  font-family: var(--font-base);
+  margin: 0;
+  padding: 0;
+}
+
+/* FOOTER */
+footer {
+  background: var(--color-primary);
+  color: var(--color-black);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: x-large;
+}
+footer .social-icons {
+  display: flex;
+  gap: 10px;
+}
+footer .social-icons a img {
+  transition: transform 0.3s ease;
+}
+footer .social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+/* CARRITO */
+#cart-button {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  background: var(--color-alternative);
+  color: var(--color-white);
+  padding: 12px 18px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+#cart-button:hover {
+  transform: scale(1.05);
+}
+#cart-icon {
+  font-size: 24px;
+}
+/* #item-count {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-alternative);
+} */
+#cart-total {
+  font-weight: 900;
+  font-size: 14px;
+  color: var(--color-white);
+}

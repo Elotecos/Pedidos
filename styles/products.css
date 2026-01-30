@@ -1,0 +1,126 @@
+@import url("global.css");
+
+/* PRODUCT DETAIL */
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px 80px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.back-button {
+  align-self: flex-start;
+  background: var(--color-secondary);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 5px 15px;
+  color: var(--color-white);
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
+}
+.back-button:hover {
+  background: #b31200;
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 20px 0;
+  object-fit: cover;
+}
+
+/* INFO CARD */
+.product-info {
+  background-color: var(--color-white);
+  border-radius: 12px;
+  padding: 25px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.product-info h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--color-secondary);
+}
+
+.product-info p {
+  margin: 0 0 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.product-info .price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--color-accent);
+  margin-bottom: 20px;
+}
+
+/* OPTIONS */
+.options {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.options h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--color-black);
+}
+.option-group {
+  margin-bottom: 15px;
+}
+.option-group h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: var(--color-secondary);
+}
+.option-group label {
+  display: block;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+/* BUTTON */
+.add-to-cart {
+  background: var(--color-accent);
+  color: var(--color-white);
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
+}
+.add-to-cart:hover {
+  background: #e65c00;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .product-info {
+    padding: 15px;
+  }
+  .product-info h1 {
+    font-size: 1.5rem;
+  }
+  .product-info p {
+    font-size: 0.9rem;
+  }
+  .product-info .price {
+    font-size: 1.2rem;
+  }
+}

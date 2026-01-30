@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalles del Producto</title>
+    <link rel="stylesheet" href="../styles/products.css" />
+    <link rel="icon" href="../Logo_Elotecos.png" type="Elotecos-icon" />
+    <script type="module" src="../scripts/product.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/727ea3c995.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="product-detail">
+      <button class="back-button" onclick="window.history.back()">←</button>
+      <img class="product-image" src="" alt="Imagen del Producto" />
+      <div class="product-info">
+        <h1></h1>
+        <p></p>
+        <div class="price"></div>
+        <div class="options"></div>
+        <button class="add-to-cart">Añadir a la Orden</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Elotecos</p>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/elotecoslasamericas/"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://wa.me/5215549683833"
+          target="_blank"
+          aria-label="WhatsApp"
+        >
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/elotecos_las_americas/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Botón flotante del carrito -->
+    <div id="cart-button" onclick="window.location.href = '../pages/cart.html'">
+      <div id="cart-info">
+        <span id="cart-total">$0.00</span>
+      </div>
+      <span id="cart-icon">🛒</span>
+    </div>
+  </body>
+</html>

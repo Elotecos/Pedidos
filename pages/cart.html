@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito</title>
+    <link rel="icon" href="../Logo_Elotecos.png" type="Elotecos-icon" />
+    <link rel="stylesheet" href="../styles/cart.css" />
+    <script
+      src="https://kit.fontawesome.com/727ea3c995.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <a href="index.html" class="back-arrow"> &#8592; <span>Regresar</span> </a>
+    <h1>Orden hasta el momento</h1>
+
+    <div id="cart-items"></div>
+
+    <div id="cart-total-container">
+      <div id="shipping-cost">Envío: $25.00</div>
+      <div id="cart-total">Total: $125.00</div>
+    </div>
+
+    <div>
+      <label for="order-type">Tipo de pedido:</label>
+      <select id="order-type">
+        <option value="local">Pasar al local</option>
+        <option value="domicilio">Envío a domicilio</option>
+      </select>
+    </div>
+
+    <div id="address-section" style="display: none">
+      <label for="customer-address">Dirección:</label>
+      <input type="text" id="customer-address" />
+    </div>
+
+    <div>
+      <label for="customer-name">Nombre:</label>
+      <input type="text" id="customer-name" required />
+    </div>
+
+    <div>
+      <label for="customer-phone">Teléfono:</label>
+      <input type="tel" id="customer-phone" required />
+    </div>
+
+    <div>
+      <label for="customer-payment">Método de pago:</label>
+      <select id="customer-payment">
+        <option value="efectivo exacto">Efectivo</option>
+        <option value="transferencia">Transferencia</option>
+      </select>
+    </div>
+
+    <button id="send-order">Enviar pedido por WhatsApp</button>
+
+    <footer>
+      <p>© 2026 Elotecos</p>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/elotecoslasamericas/"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://wa.me/5215549683833"
+          target="_blank"
+          aria-label="WhatsApp"
+        >
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/elotecos_las_americas/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="../scripts/cart.js"></script>
+  </body>
+</html>

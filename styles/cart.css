@@ -1,0 +1,135 @@
+@import url("global.css");
+
+/* BACK ARROW */
+.back-arrow {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
+}
+.back-arrow:hover {
+  background-color: #b31200;
+  transform: scale(1.05);
+}
+.back-arrow span {
+  margin-left: 8px;
+}
+
+/* TITULO */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: var(--color-secondary);
+}
+
+/* CART ITEMS */
+#cart-items {
+  background: var(--color-light);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.cart-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+.cart-item-title {
+  font-size: 16px;
+  font-weight: bold;
+  flex-grow: 1;
+}
+.cart-item-price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: var(--color-secondary);
+}
+.remove-item {
+  background: none;
+  border: none;
+  color: var(--color-secondary);
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+.remove-item:hover {
+  color: darkred;
+}
+
+/* TOTAL */
+#cart-total-container {
+  background: var(--color-light);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: right;
+  font-size: 1.2em;
+}
+#shipping-cost {
+  color: #555;
+}
+#cart-total {
+  font-weight: bold;
+  color: var(--color-secondary);
+}
+
+#send-order {
+  color: var(--color-white);
+}
+
+/* FORM */
+div {
+  margin-bottom: 15px;
+}
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+input[type="text"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border 0.3s ease;
+}
+input:focus,
+select:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+/* BUTTON */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  border: none;
+  border-radius: 25px;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
+}
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}

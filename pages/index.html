@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenes Elotecos</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" href="../Logo_Elotecos.png" type="Elotecos-icon">
+    <script
+      src="https://kit.fontawesome.com/727ea3c995.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="../scripts/principal.js"></script>
+</head>
+<body>
+    <header>
+        <img src="../Logo_Elotecos.png" alt="Logo_Elotecos" class="logo">
+        <div id="open-info">
+            <div id="status-container">
+                <span id="status-bullet" class="bullet"></span>
+                <h3 id="open-status">Abierto/Cerrado</h3>
+            </div>
+        </div>
+    </header>   
+    
+    
+    <nav class="horizontal-scroll">
+        <button id="btn-todo"><b>Todo</b></button>
+        <button id="btn-elotes"><b>Elotes</b></b></button>
+        <button id="btn-esquites"><b>Esquites</b></button>
+        <button id="btn-maruchan"><b>Maruchans</b></button>
+        <button id="btn-snacks"><b>Snacks</b></button>
+        <button id="btn-drinks"><b>Drinks</b></button>
+    </nav>
+    <main>
+        <div id="product-container" class="product-container"></div>
+    </main>
+    <footer>
+        <p>© 2026 Elotecos</p>
+        <div class="social-icons">
+            <a
+            href="https://www.facebook.com/elotecoslasamericas/"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://wa.me/5215549683833"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/elotecos_las_americas/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+    </footer>
+    
+    
+
+    <!-- Botón flotante del carrito -->
+    <div id="cart-button" onclick="window.location.href='../pages/cart.html'">
+        <div id="cart-info">
+            <span id="cart-total">$0.00</span> 
+        </div>
+        <span id="cart-icon">🛒</span>
+    </div>
+    
+    
+</body>
+</html>
