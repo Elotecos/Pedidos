@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (validateOptions(options)) {
       addToCart(product, selectedSize, options, customText);
       alert("¡Producto añadido!");
-      window.location.href = "/index.html";
+      window.location.href = "../index.html";
     } else {
       alert("Por favor, no dejes nada sin llenar");
     }

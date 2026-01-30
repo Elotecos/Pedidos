@@ -110,34 +110,54 @@ h1 {
 }
 
 /* FORM */
-form {
+.form-card {
   width: 100%;
   max-width: 600px;
-  background: var(--color-white);
+  background: var(--color-bg);
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
 }
-label {
+.form-card label {
   font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 5px;
   display: block;
 }
-input[type="text"],
-input[type="tel"],
-select {
-  width: 100%;
-  padding: 10px;
+.form-card input[type="text"],
+.form-card input[type="tel"],
+.form-card select {
+  width: 95%;
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1.1rem;
+  margin-bottom: 15px;
   transition: border 0.3s ease;
 }
-input:focus,
-select:focus {
+.form-card input:focus,
+.form-card select:focus {
   border-color: var(--color-primary);
   outline: none;
+}
+.form-card button {
+  display: block;
+  margin: 25px auto 0;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border: none;
+  border-radius: 30px;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
+}
+.form-card button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
 }
 
 /* BUTTON */

@@ -24,39 +24,40 @@
         <div id="shipping-cost">Envío: $25.00</div>
         <div id="cart-total">Total: $125.00</div>
       </div>
+      <div class="form-card">
+        <div>
+          <label for="order-type">Tipo de pedido:</label>
+          <select id="order-type">
+            <option value="local">Pasar al local</option>
+            <option value="domicilio">Envío a domicilio</option>
+          </select>
+        </div>
 
-      <div>
-        <label for="order-type">Tipo de pedido:</label>
-        <select id="order-type">
-          <option value="local">Pasar al local</option>
-          <option value="domicilio">Envío a domicilio</option>
-        </select>
+        <div id="address-section" style="display: none">
+          <label for="customer-address">Dirección:</label>
+          <input type="text" id="customer-address" />
+        </div>
+
+        <div>
+          <label for="customer-name">Nombre:</label>
+          <input type="text" id="customer-name" required />
+        </div>
+
+        <div>
+          <label for="customer-phone">Teléfono:</label>
+          <input type="tel" id="customer-phone" required />
+        </div>
+
+        <div>
+          <label for="customer-payment">Método de pago:</label>
+          <select id="customer-payment">
+            <option value="efectivo exacto">Efectivo</option>
+            <option value="transferencia">Transferencia</option>
+          </select>
+        </div>
+
+        <button id="send-order">Enviar pedido por WhatsApp</button>
       </div>
-
-      <div id="address-section" style="display: none">
-        <label for="customer-address">Dirección:</label>
-        <input type="text" id="customer-address" />
-      </div>
-
-      <div>
-        <label for="customer-name">Nombre:</label>
-        <input type="text" id="customer-name" required />
-      </div>
-
-      <div>
-        <label for="customer-phone">Teléfono:</label>
-        <input type="tel" id="customer-phone" required />
-      </div>
-
-      <div>
-        <label for="customer-payment">Método de pago:</label>
-        <select id="customer-payment">
-          <option value="efectivo exacto">Efectivo</option>
-          <option value="transferencia">Transferencia</option>
-        </select>
-      </div>
-
-      <button id="send-order">Enviar pedido por WhatsApp</button>
     </div>
     <footer>
       <p>© 2026 Elotecos</p>
