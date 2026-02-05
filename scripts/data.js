@@ -152,7 +152,7 @@ export const products = {
         title: "Charola Eloteco Clásico",
         description:
           "Charola con un elote y esquite clásicos acompañados de papas Sabritas a elegir.",
-        price: 80.0,
+        price: 85.0,
         image: "img/charola-eloteco.png",
         options: [
           { name: "Bolsa papitas", options: papitasOptions },
@@ -164,7 +164,7 @@ export const products = {
         title: "Charola Eloteco Loco",
         description:
           "Charola con un elote y esquite loco acompañados de papas Sabritas a elegir.",
-        price: 90.0,
+        price: 95.0,
         image: "img/charola-eloteco-loco.png",
         options: [
           { name: "Cubierta fritura", options: frituraOptions },
@@ -191,7 +191,7 @@ export const products = {
         title: "Doriesquite",
         description:
           "Doritos a elegir preparados con esquite, limón, sal, mayonesa y queso rallado.",
-        price: 55.0,
+        price: 60.0,
         image: "img/dori-esquite.png",
         options: [{ name: "Extras", options: extrasOptions }],
       },
@@ -200,7 +200,7 @@ export const products = {
         title: "Tostiesquite",
         description:
           "Tostitos a elegir preparados con esquite, limón, sal, mayonesa y queso rallado.",
-        price: 55.0,
+        price: 60.0,
         image: "img/tosti-esquite.png",
         options: [{ name: "Extras", options: extrasOptions }],
       },
@@ -210,7 +210,7 @@ export const products = {
         description: "Esquite preparado con sal y limón.",
         sizes: [
           { size: "Chico", price: 30.0 },
-          { size: "Grande", price: 55.0 },
+          { size: "Grande", price: 50.0 },
         ],
         image: "img/esquite-natural.png",
         options: [{ name: "Extras", options: extrasOptions }],
@@ -233,7 +233,7 @@ export const products = {
         description:
           "Esquite preparado con sal y limón, mayonesa, queso y cobertura de fritura: doritos nacho, takis fuego, ruffles queso o cheetos flamin' hot.",
         sizes: [
-          { size: "Chico", price: 40.0 },
+          { size: "Chico", price: 45.0 },
           { size: "Grande", price: 65.0 },
         ],
         image: "img/esquite-loco.png",
@@ -248,8 +248,8 @@ export const products = {
         description:
           "Esquite Loco acompañado de una camita de papas Sabritas a elegir.",
         sizes: [
-          { size: "Chico", price: 55.0 },
-          { size: "Grande", price: 75.0 },
+          { size: "Chico", price: 60.0 },
+          { size: "Grande", price: 80.0 },
         ],
         image: "img/papa-esquite.png",
         options: [
@@ -281,7 +281,7 @@ export const products = {
           "Esquite clásico acompañado con papas cambray preparadas con especias al horno.",
         sizes: [
           { size: "Chico", price: 50.0 },
-          { size: "Grande", price: 70.0 },
+          { size: "Grande", price: 75.0 },
         ],
         image: "img/esquite-cambray.png",
         options: [
@@ -321,7 +321,7 @@ export const products = {
         title: "Esquisopa loca",
         description:
           "Maruchan-esquite, fritura y una bolsa de papas Sabritas a elegir.",
-        price: 80.0,
+        price: 85.0,
         image: "img/esquisopa-loca.png",
         options: [
           { name: "Cubierta fritura", options: frituraOptions },
@@ -335,7 +335,7 @@ export const products = {
         title: "Maruchan Suadero o Pastor",
         description:
           "Maruchan-esquite con una porción de suadero, pastor o mixto y verdura encima.",
-        price: 80.0,
+        price: 85.0,
         image: "img/maruchan-suadero-pastor.png",
         options: [
           { name: "Sopa sabor", options: maruchanOptions },
@@ -369,7 +369,7 @@ export const products = {
         title: "Nachos con suadero o pastor",
         description:
           "Charola de nachos acompañado de chiles jalapeño, queso líquido derretido calientito y una porción de carne al pastor, suadero o mixto encima.",
-        price: 70.0,
+        price: 75.0,
         image: "img/nachos-carne.png",
         options: [
           { name: "Carne", options: carneOptions },
@@ -392,7 +392,7 @@ export const products = {
         title: "Arizona Loco",
         description:
           "Escarchado de chamoy con miguelito, mango o fresa, cacahuates, gomitas y dulces de tamarindo. 680ml.",
-        price: 70.0,
+        price: 75.0,
         image: "img/arizona-loco.png",
         options: [
           { name: "Sabor", options: saborArizonaLoco },
@@ -428,7 +428,7 @@ export const products = {
         id: 28,
         title: "Boing",
         description: "Mango, Fresa, Manzana, Uva. 500ml.",
-        price: 20.0,
+        price: 25.0,
         image: "img/boing.png",
         options: [{ name: "Sabor", options: saborBoings }],
       },
