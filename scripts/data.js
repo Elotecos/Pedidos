@@ -178,7 +178,7 @@ export const products = {
         description:
           "Tiras de elote amarillo crujientes (8pzas) Preparado con salsa inglesa, salsa maggi y tajín. Elige tu aderezo favorito: BBQ, Lemon & Pepper, Queso parmesano o Mango habanero",
         price: 65.0,
-        image: "../img/costillitas-elote.png",
+        image: "img/costillitas-elote.png",
         options: [
           { name: "Aderezo", options: aderezoOptions },
           { name: "Extras", options: extrasOptions },
