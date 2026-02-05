@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const customText = document.getElementById("custom-text")
       ? document.getElementById("custom-text").value
       : ""; // Obtener el texto personalizado
-    if (validateOptions(options)) {
+    if (validateOptions(options, selectedSize, product)) {
       addToCart(product, selectedSize, options, customText);
       alert("¡Producto añadido!");
       window.location.href = "../index.html";
@@ -266,7 +266,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Función para validar las opciones seleccionadas
-  function validateOptions(options) {
+  function validateOptions(options, selectedSize, product) {
+    if (product.sizes && product.sizes.length > 0 && !selectedSize) {
+      return false;
+    }
     for (const groupName in options) {
       // Solo verifica que no esté vacío si no es 'Extras'
       if (groupName !== "extras" && options[groupName].length === 0) {
